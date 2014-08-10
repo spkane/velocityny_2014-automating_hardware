@@ -10,10 +10,18 @@
 .reveal section img
 {
   height: auto;
-  width: 100%;
+  width: auto;
   max-width: 80%;
   max-height: 80%;
   margin: 2%;
+}
+
+/* More room for code */
+.reveal pre code {
+  padding: 5px;
+  overflow: auto;
+  max-height: 600px;
+  word-wrap: normal;
 }
 
 /* Blow iframe up to full screen size */
@@ -41,7 +49,14 @@ body,
   font-family: inherit;
   font-weight: bold;
 }
-
+.reveal ul {
+  font-size:   150%;
+  line-height: 150%;
+}
+.reveal pre {
+  font-size:   80%;
+  line-height: 100%;
+}
 /* Override the default uppercase text-transform
    for h2-h6 (but retain for h1) */
 .reveal h2,

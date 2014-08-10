@@ -1,11 +1,22 @@
-.qrcode img {
-    /* Override "block" display which qrcode.js sets by default, to allow
-       proper centering */
-    display: inline !important;
-    height: 80%;
-    width: auto;
-    margin-left: auto;
-    margin-right: auto;
-    background-color: white !important;
-    padding: 1em;
+/* Blow image up to full screen size */
+.reveal section img
+{
+  height: 80%;
+  width: auto;
+  max-width: 80%;
+  max-height: 80%;
+  margin: 2%;
+}
+
+.qrcode img 
+{
+  /* Override "block" display which qrcode.js sets by default, to allow
+    proper centering */
+  display: inline !important;
+  height: 80%;
+  width: auto;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: white !important;
+  padding: 1em;
 }

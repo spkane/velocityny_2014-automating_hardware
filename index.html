@@ -32,26 +32,54 @@
 		id="talk">http://spkane.github.io/velocityny_2014-automating_hardware</a></p>
 	</section>
 
-	<section id="intro"
-		 data-markdown="markdown/intro.md"
+	<section id="1-intro"
+		 data-markdown="markdown/1-intro.md"
 		 data-separator="^\n\n\n"
 		 data-vertical="^\n\n"
 		 data-notes="^Note:" >
 	</section>
 
-	<section id="greek"
-	  data-markdown="markdown/greek.md"
+	<section id="2-greek"
+	  data-markdown="markdown/2-greek.md"
 	  data-separator="^\n\n\n"
 	  data-vertical="^\n\n"
 	  data-notes="^Note:" >
 	</section>
 
-	<section id="pxe"
-		 data-markdown="markdown/pxe.md"
-		 data-separator="^\n\n\n"
-		 data-vertical="^\n\n"
-		 data-notes="^Note:" >
-	</section>
+<section id="3-together"
+   data-markdown="markdown/3-together.md"
+   data-separator="^\n\n\n"
+   data-vertical="^\n\n"
+   data-notes="^Note:" >
+</section>
+
+<section id="4-burnin"
+   data-markdown="markdown/4-burnin.md"
+   data-separator="^\n\n\n"
+   data-vertical="^\n\n"
+   data-notes="^Note:" >
+</section>
+
+<section id="5-install"
+   data-markdown="markdown/5-install.md"
+   data-separator="^\n\n\n"
+   data-vertical="^\n\n"
+   data-notes="^Note:" >
+</section>
+
+<section id="6-future"
+   data-markdown="markdown/6-future.md"
+   data-separator="^\n\n\n"
+   data-vertical="^\n\n"
+   data-notes="^Note:" >
+</section>
+
+<section id="7-finale"
+   data-markdown="markdown/7-finale.md"
+   data-separator="^\n\n\n"
+   data-vertical="^\n\n"
+   data-notes="^Note:" >
+</section>
 
       </div>
     </div>
@@ -93,12 +121,17 @@ Reveal.initialize({
     progress: false,
     history: true,
     center: true,
+    width: 1280,
+    height: 720,
+    margin: 0.1,
+    minScale: 0.2,
+    maxScale: 1.0,
 
     // Parallax background image
     // parallaxBackgroundImage: 'images/oscon-logo.svg',
 
     // Parallax background size
-    parallaxBackgroundSize: '3224px 1024px', // CSS syntax, e.g. "2100px 900px"
+    // parallaxBackgroundSize: '3224px 1024px', // CSS syntax, e.g. "2100px 900px"
 
     theme: Reveal.getQueryHash().theme, // available themes are in /css/theme
     transition: Reveal.getQueryHash().transition || 'fade', // default/cube/page/concave/zoom/linear/fade/none
