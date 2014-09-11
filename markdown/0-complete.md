@@ -16,6 +16,8 @@ Note:
 ## Automated Hardware Provisioning in the Real-world
 #### or
 ### "How to Build Your Cloud Out of Metal"
+Note:
+* Print with something like: http://127.0.0.1:8080/?print-pdf#/
 
 
 # - 0 to 60 -
