@@ -4,8 +4,9 @@
 ### New Relic - Site Engineering
 Note:
 * Shutdown Chrome
-* Shutdown Little Snitch
+* Silence Little Snitch
 * Shutdown VPN Tint
+* Shutdown Flux
 * Bluetooth connect laptop to iPhone
 * Start Unified Remote Control
 * Full Screen Safari (Bookmarklet)
@@ -17,21 +18,18 @@ Note:
 ### "How to Build Your Cloud Out of Metal"
 
 
-## My First Cloud
-![Cloud in a Jar](images/web_cloud_in_jar.png)
+# - 0 to 60 -
+* 00: Small hardware orders with manual server installs
+* 60: Racks worth of hardware and automated installs
 
-Image: [Concord Consortium](http://webapps.teemss2.concord.org/pdf/teacher/tg_unit_4_investigation_1.html)
 Note:
 * We’ve all been there
 * We studied, learned, and then built something new and interesting.
 * People start using it, expectations increase, and suddenly what might have been a simple side-project is suddenly is become a foundation of something much bigger.
 
 
-## Our Cloud v2.0
-![Earth Water Cycle](images/watercyclesummary.jpg)
-Note:
-* Needs increase and timelines shorten
-* The complete system becomes more complicated and time-sensitive
+## What we need to build
+![Provisioning Process](images/process.png)
 
 
 # Design for Agility
@@ -66,8 +64,6 @@ Note:
 # BMC
 ## Baseboard Management Controller
 * The brain behind IPMI
-
-Note:
 * The BMC is the minimum management component
 
 
@@ -99,7 +95,7 @@ Image: [Thomas-Krenn AG](http://www.thomas-krenn.com/en/wiki/File:Ipmi-schematis
 ## Datacenter Information Management
 
 
-# Order & Rack 
+# Order & Rack
 # the Hardware
 * RMCs should be set to DHCP
 * They can also use DDNS
@@ -115,11 +111,9 @@ Note:
 # Bootstrapping the System
 
 
-## "It's Alive!"
-### Waking up the RMC
-![Applying Power](images/lightning.jpg)
+## Waking up the RMC
+![Provisioning Step 1](images/step-1.png)
 
-Image: [Oregon Department of Transportation](https://flic.kr/p/oqU3hZ)
 Note:
 * Making the first DHCP call
 
@@ -171,6 +165,10 @@ fi
 ```
 
 
+## Detect and Test
+![Provisioning Steps 2-3](images/steps-2-3.png)
+
+
 # Interrogate the RMC
 * ID system via Serial Number
 * Determine hardware details
@@ -215,7 +213,7 @@ iPXE (formally gPXE and Etherboot): An opensource implementation, capable over b
 # Booting iPXE
 ```
 #!ipxe
-  
+
 :retry_dhcp
 dhcp && isset http://boot.ipxe.org/demo/boot.php || goto retry_dhcp
 echo Booting from http://boot.ipxe.org/demo/boot.php
@@ -260,7 +258,8 @@ Note:
 * Update host record in CMDB/DCIM
 
 
-# Installing Systems via iPXE
+## Installing Systems
+![Provisioning Steps 4-5](images/steps-4-5.png)
 
 
 # OS Installers
@@ -285,6 +284,8 @@ Note:
 -
 ### Cloud-Init, Puppet, Chef, etc.
 * Cloud-init examples: http://goo.gl/ogQUwN
+* Puppet examples: http://goo.gl/Tk77SH
+* Chef examples: http://goo.gl/wA5nDH
 
 
 # Register the Results (again)
@@ -297,14 +298,18 @@ Note:
 Image: [Torkild Retvedt](https://flic.kr/p/6gYLHR)
 
 
+## What we built
+![Provisioning Process](images/process.png)
+
+
 # Our Next Steps
 
 
-# Micro-services 
+# Micro-services
 # Everywhere
-### Small REST APIs 
+### Small REST APIs
 ### for workflow construction
-* Inventory
+* Inventory (over-time)
 * Health
 * Remote configuration
 * Etc.
@@ -313,18 +318,15 @@ Image: [Torkild Retvedt](https://flic.kr/p/6gYLHR)
 # The Future...
 
 
-# REST APIs 
+# REST APIs
 ## in Hardware
 * Software should not rely on SSH
 * Humans should not use XML
 * Nothing should implement a custom protocol
 
 
-#### Open Compute Project
-#### http://www.opencompute.org/
-![Build Open Infrastructures](images/infra.png)
-
-Image: [xkcd](http://xkcd.com/743/)
+## Open Compute Project
+### http://www.opencompute.org/
 
 
 # Any Questions?
@@ -334,7 +336,7 @@ _________
 ### Interested in a great job?
 
 .
-#### Talk to me 
+#### Talk to me
 #### *or visit*
 #### http://newrelic.com/about/careers
 
