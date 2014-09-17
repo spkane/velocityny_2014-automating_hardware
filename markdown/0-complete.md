@@ -6,6 +6,7 @@ Note:
 * Shutdown Chrome
 * Silence Little Snitch
 * Shutdown VPN Tint
+* Shutdown Ring Central
 * Shutdown Flux
 * Bluetooth connect laptop to iPhone
 * Start Unified Remote Control
